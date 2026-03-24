@@ -1,40 +1,59 @@
-🏨 HotelRevAI: AI-Driven Revenue Analysis
-👋 Welcome to HotelRevAI! I built this project to explore how data analytics and AI-driven insights can help the hospitality industry maximize revenue. Hotels generate massive amounts of booking data every day, but the real challenge is turning those rows and columns into actionable strategies.
+🏨 HotelRevAI: AI-Driven Revenue Analysis for Hotels
+An intelligent analytics system designed to monitor, analyze, and optimize hotel revenue and occupancy performance using data-driven insights. This project was developed as part of the Infosys Springboard Virtual Internship 6.0.
 
-Using Excel for the heavy data lifting and Power BI for visual storytelling, this project breaks down booking trends, cancellation patterns, and pricing optimization to help "virtual" hotel stakeholders make better data-driven decisions.
+📖 Project Overview
+The hospitality industry generates immense amounts of booking and customer data. The goal of HotelRevAI is to transform this raw data into actionable intelligence. By integrating data modeling, performance metrics, guest analysis, and forecasting into a unified Power BI dashboard, this project empowers hotel stakeholders (General Managers and Revenue Managers) to optimize pricing, reduce cancellation risks, and boost overall profitability.
 
-🎯 What's the goal?
-The main objective of this dashboard is to provide a clear, high-level view of hotel performance while allowing users to drill down into specific revenue drivers. It's designed to answer questions like:
+🛠️ Tech Stack & Tools
+Business Intelligence: Power BI (Interactive Dashboards, Data Modeling)
 
-When are our peak booking seasons, and are we pricing them correctly?
+Data Processing: Power Query (M Language for data cleaning, merging, and automated data generation)
 
-Which customer segments are driving the most revenue?
+Analytics Engine: DAX (Data Analysis Expressions for custom KPIs and clustering logic)
 
-How do cancellation rates impact our bottom line?
+Data Source: Microsoft Excel / CSV
 
-🛠️ Built With
-Microsoft Excel: Data cleaning, preprocessing, and exploratory data analysis (EDA).
+📊 Key Modules & Dashboards
+1. Executive Performance Overview (General Manager Dashboard)
+Provides a high-level snapshot of overall hotel health across multiple branches.
 
-Power BI: Data modeling, DAX measures, and interactive dashboard design.
+Core KPIs Tracked: RevPAR (Revenue Per Available Room), ADR (Average Daily Rate), Occupancy Rate %, and Total Revenue.
 
-AI/Analytics Concepts: Forecasting trends, anomaly detection in bookings, and predictive revenue modeling.
+Insights: Branch-wise revenue contribution, channel distribution (OTA vs. Direct vs. Corporate), and weekday vs. weekend booking trends.
 
-📊 Key Metrics & KPIs Tracked
-Here are some of the core hospitality metrics I focused on:
+2. Guest Behavior & Customer Clustering (Module 3)
+Deep dive into who is booking and why, using RFM (Recency, Frequency, Monetary) principles to segment guests.
 
-RevPAR (Revenue Per Available Room)
+Guest Segmentation: Categorized travelers into Business, Family, Solo, and Corporate based on stay duration and purpose.
 
-ADR (Average Daily Rate)
+Behavioral Clustering (DAX Implementation): Segmented guests dynamically into categories like "First-Timer", "Loyal Guest", and "High Spender" based on their historical spend and booking frequency.
 
-Occupancy % (Total rooms occupied vs. total available)
+Demographics: Visualized nationality spread and booking sources to identify high-value geographic markets.
 
-Cancellation Rate & Revenue Lost
+3. Forecasting & Cancellation Trends (Module 4)
+Identifying unreliable bookings and projecting future demand.
 
-Customer Booking Lead Time
+Cancellation Analytics: Created logic to track CancellationFlag, NoShowFlag, and LeadTime to map out the likelihood of guests dropping out based on how early they booked.
 
-💡 Key Insights & Takeaways
-(Note: You can update this section once you finish the project to include real findings!)
+Demand Forecasting: Utilized Power BI's built-in 7-month forecasting model with a 95% confidence interval to provide visibility into future occupancy trends, aiding in dynamic pricing and staff planning.
 
-Insight 1: E.g., "Weekends see a 20% spike in ADR, but business travelers booking last-minute on weekdays actually yield higher overall margins."
+4. Revenue Strategy & Ancillary Revenue (Module 5)
+Looking beyond room rates to maximize total customer value.
 
-Insight 2: E.g., "Implementing AI-driven dynamic pricing during local events could recover up to 15% of lost revenue from early sell-outs."
+Ancillary Tracking: Modeled non-room revenue streams like Spa, Dining, and Other Services using custom M-code to generate realistic transaction data.
+
+Upsell Performance: Evaluated the impact of discounts on overall revenue and modeled dynamic pricing logic to support tactical revenue management.
+
+🚀 How to Run the Project
+Clone this repository to your local machine.
+
+Ensure you have Power BI Desktop installed.
+
+Open the Hotel_Final.pbix file.
+
+(Optional) To view the raw data and transformations, click on Transform Data to open the Power Query Editor.
+
+👨‍💻 About the Author
+Shiven Pratap Singh
+B.Tech in Computer Science and Engineering | Lovely Professional University
+Passionate about turning complex datasets into clear, strategic business insights. Proficient in C++, Java, Python, and data analytics.
